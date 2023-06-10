@@ -1,0 +1,25 @@
+<form id="admin" action="/sort" method="get">
+<table>
+<tr>
+    <th>Name</th>
+    <th id="sort">Email<button>Sort</button></th>
+    <th>Subtotal</th>
+    <th>Tax</th>
+    <th>Total</th>
+    <th>Date</th>
+</tr>
+{{#each payments}}
+<tr>
+    <td>{{firstName}}</td>
+    <td>{{userName}}</td>
+    <td>{{subTotal}}</td>
+    <td>{{tax}}</td>
+    <td>{{total}}</td>
+    <td>{{date}}</td>
+</tr>
+{{/each}}
+</table>
+{{#each avg}}
+<p>Total amount earned: {{average_total}}</p>
+{{/each}}
+</form>
